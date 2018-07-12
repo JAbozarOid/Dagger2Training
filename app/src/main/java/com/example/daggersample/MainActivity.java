@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     // برای درخواست وابستگی. هرجا وابستگی داشته باشیم با inject@ این annotation اعلام میکنیم.
 
-
     private User user;
 
     @Override
