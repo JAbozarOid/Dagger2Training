@@ -1,6 +1,6 @@
-package com.example.daggersample;
+package com.example.daggersample.root;
 
-
+import com.example.daggersample.login.LoginActivity;
 import javax.inject.Singleton;
 import dagger.Component;
 
@@ -12,8 +12,9 @@ import dagger.Component;
 
 // یک interface هست که بین moduleها (یعنی کلاس‌های تامین کننده وابستگی) و injectها (یعنی جاهایی که وابستگی داریم) ارتباط بر قرار میکنن.
 @Singleton
-@Component(modules = ApplicationModule.class)
+@Component(modules = {ApplicationModule.class})
 public interface ApplicationComponent {
 
-    void inject(MainActivity target);
+    //void inject(MainActivity target);
+    void inject(LoginActivity target);
 }

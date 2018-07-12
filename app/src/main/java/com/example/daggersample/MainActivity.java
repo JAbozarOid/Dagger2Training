@@ -8,6 +8,7 @@ import com.example.daggersample.daggersample.DaggerUserComponent;
 import com.example.daggersample.daggersample.User;
 import com.example.daggersample.daggersample.UserComponent;
 import com.example.daggersample.daggersample.UserModule;
+import com.example.daggersample.root.App;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((App) getApplication()).getComponent().inject(this);
+        //((App) getApplication()).getComponent().inject(this);
 
         UserComponent component = DaggerUserComponent.builder().userModule(new UserModule()).build();
         user = component.provideUser();

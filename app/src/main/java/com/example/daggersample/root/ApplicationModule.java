@@ -1,4 +1,4 @@
-package com.example.daggersample;
+package com.example.daggersample.root;
 
 import android.app.Application;
 import android.content.Context;
