@@ -6,5 +6,5 @@ public interface LoginRepository {
 
     User getUser();
 
-    void saveUser();
+    void saveUser(User user);
 }
